@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+                <a href="../index.html"><img src="../Nav_images/etude_logo.png" alt="etude_logo"/></a>
+        </nav>
+    </header>
+        <div class="container">
+            <div class="image"></div>
+            <div class="credentials">
+                <p class="heading">Create Account</p>
+                <form action="createAccount.html" method="post">
+                    <div class="details">
+                        <div class="user-name">
+                            Enter your name:
+                            <br>
+                            <input type="text" placeholder="Name" name="name" class="name" id="name" required>
+                        </div>
+                        <div class="user-phone">
+                            Enter your phone number:
+                            <br>
+                            <input type="tel" placeholder="Phone Number" name="phone" class="phone" id="phone" required>
+                        </div>
+                        <div class="user-dob">
+                            Enter your date of birth:
+                            <br>
+                            <input type="date" placeholder="Date" name="date" class="date" id="date" required>
+                        </div>
+                        <div class="user-email">
+                            Enter your E-mail:
+                            <br>
+                            <input type="email" placeholder="E-mail" name="email" class="email" id="email" required oninput="validateEmail()"><small id="emailValidation">Invalid email</small>
+                        </div>
+                        <div class="user-password">
+                            Enter your Password:
+                            <br>
+                            <input type="password" placeholder="Password" name="password" class="password" id="password" required oninput="validatePassword()">
+                            <small class="firstPassword">Invalid password</small>
+                        </div>
+                        <div class="re-enter-password">
+                            Re-enter your Password:
+                            <br>
+                            <input type="password" placeholder="Password" name="password2" class="password2" id="password2" required oninput="secondPassword()">
+                            <small id="secondPassword">Passwords do not match</small>
+                        </div>
+                        <button type="submit" class="createAccount">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

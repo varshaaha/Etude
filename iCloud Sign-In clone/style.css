@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "SF-PRO";
+  src: url("./font/SF-Pro.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "SF-PRO", "Raleway", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgba(251, 251, 253, 255);
+}
+
+header {
+  position: fixed;
+  background-color: rgba(251, 251, 253, 0.708);
+  backdrop-filter: blur(23px);
+}
+
+nav {
+  width: 100vw;
+  height: 7.3vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 18px;
+  padding-top: 2px;
+}
+
+.right-flex,
+.left-flex {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.right-flex {
+  padding: 5px 8px 5px 8px;
+  margin-right: 7px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-flex:hover {
+  background-color: #e9e9ec;
+}
+
+.login {
+  /* border: 1px solid red; */
+  border-radius: 5%;
+  box-shadow: 6px 20px 30px 3px #d2d2d3;
+  margin: auto;
+  margin-top: 5em;
+  width: 50vw;
+  height: 120vh;
+  padding-top:1.65em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  height: 170px;
+}
+
+h1{
+  font-weight:600;
+  margin-top:6.5px;
+  margin-bottom:0;
+}
+
+
+.input-field-1{
+  height:2.8em;
+  width:26vw;
+  position: relative;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+input[type="text"]{
+  border: none;
+  width:inherit;
+  height:inherit;
+  padding:10px 10px;
+  border:1px solid #8e8e8e;
+  border-radius:5px;
+  font-size:large;
+  color:#8e8e8e;
+}
+
+input[type="text"]:focus{
+  border:2px solid #2485ed;
+}
+
+button.button-for-apple-id{
+  width:2.2em;
+  height: 2.2em;
+  border-radius:50%;
+  border: 1px solid #8e8e8e;
+  position:absolute;
+  top:6.5px;
+  right:15px;
+  background-color:#ffffff;
+  color:#8e8e8e;
+}
+
+.input-field-2{
+  height:2.8em;
+  width:26vw;
+  position: relative;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+input[type="password"]{
+  border: none;
+  width:inherit;
+  height:inherit;
+  padding:10px 10px;
+  border:1px solid #8e8e8e;
+  border-radius:5px;
+  font-size:large;
+  color:#8e8e8e;
+}
+
+button.button-for-password{
+  width:2.2em;
+  height: 2.2em;
+  border-radius:50%;
+  border: 1px solid #8e8e8e;
+  position:absolute;
+  top:6.5px;
+  right:15px;
+  background-color:#ffffff;
+  color:#8e8e8e;
+}
+
+a:link{
+  color:#0070C9;
+  text-decoration:none;
+  font-size:medium;
+}
+
+.check-box{
+  color:#494949;
+  font-size:medium;
+  padding:18px;
+  border-bottom:1px solid #8e8e8e;
+  border-radius: 1.5px;
+}
+
+.anchors{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom:60px;
+}
+
+footer{
+  width:100vw;
+  height:13vh;
+  margin-top:170px;
+  padding:30px;
+  font-size:x-small;
+  background-color: #f5f5f7;
+}
+
+.foot{
+  background-color: #f5f5f7;
+  display:flex;
+  justify-content:space-between;
+}
+
+.foot a:visited, .foot a, .foot{
+  color:#646467;
+}
+
+li{
+  display:inline;
+}
+
+.copyright, ul{
+  background-color: #f5f5f7;
+  border:none;
+}

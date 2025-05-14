@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "sofiapro-light";
+    src: url("./Fonts/sofiapro-light.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "sofiapro-light",sans-serif;
+    box-sizing: border-box;
+}
+
+header nav{
+    padding: 10px;
+    z-index:2;
+    text-align: center;
+}

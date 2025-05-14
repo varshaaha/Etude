@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "sofiapro-light";
+    src: url("./Fonts/sofiapro-light.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "sofiapro-light",sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header{
+    position:fixed;
+    background-color: rgba(255, 255, 255, 0);
+    z-index:10;
+}
+
+nav{
+    padding:10px;
+    width:100vw;
+    height:max-content;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav_menu{
+    margin-right:15px;
+    width:27%;
+    height:45px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+/* images of cart and search */
+.nav_menu img{
+    width:15px;
+}
+
+.image_1{
+    width:100vw;
+    height:100vh;
+    background-image: url("./Nav_images/Vegan_Foundation.jpg");
+    background-size: cover;
+}
+
+.image_1 a{
+    text-decoration: none;
+    color:black;
+    position: relative;
+    top:50%;
+    font-size:25px;
+    font-weight:900;
+}
+
+input[type="text"]{
+    width:65%;
+    height:100%;
+    padding: 12px;
+    border-radius:10px;
+    font-weight:bold;
+    border: none;
+    background-color: rgba(245, 245, 245, 0.541);
+    backdrop-filter:blur(30px);
+    position:relative;
+}
+
+#magnifier{
+    position:absolute;
+    right:155px;
+}
+
+#cart{
+    margin: 0 15px;
+}
+
+button.Login{
+    width:20%;
+    height:70%;
+    margin-right:5px;
+    border-radius:2px;
+    border:none;
+    background-color:#e15477;
+    font-weight:bold;
+    color:white;
+}
+
+button.Login:hover{
+    cursor: pointer;
+    box-shadow: 4.5px 4.5px 5px rgba(225, 84, 119, 0.311);
+    transform:scale(1.005);
+}
+
+.Hot-Deals{
+    width:100vw;
+    height:130vh;
+    padding: 20px 25px;
+    background: rgb(251,243,235);
+    background: linear-gradient(90deg, rgba(251,243,235,1) 20%, rgba(251,241,230,1) 40%, rgba(253,235,217,1) 60%, rgba(254,228,203,1) 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a.items{
+    text-decoration: none;
+    font-size: medium;
+    font-weight:550;
+}
+
+a.items:link, a.items:visited{
+    color:black;
+}
+
+a.items:hover{
+    color:#e15477;
+}
+
+.hot-deals-heading,.whats-new-heading,.bestsellers-heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.hot-deals-items,.bestsellers-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hot-deals-item-1 img,.hot-deals-item-2 img,.hot-deals-item-3 img,.hot-deals-item-4 img,.whats-new-item-1 img,.whats-new-item-2 img,.whats-new-item-3 img,.whats-new-item-4 img,.bestsellers-item-1 img,.bestsellers-item-2 img,.bestsellers-item-3 img,.bestsellers-item-4 img{
+    width:100%;
+
+}
+
+.hot-deals-item-1,.hot-deals-item-2,.hot-deals-item-3,.hot-deals-item-4,.bestsellers-item-1,.bestsellers-item-2,.bestsellers-item-3,.bestsellers-item-4{
+    width:22%;
+    height:80vh;
+    border-radius: 2px;
+    background-color: rgba(245, 245, 245, 0.646);
+    backdrop-filter:blur(30px);
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+button.Add-to-Cart{
+    width:50%;
+    height: 30px;
+    margin-left:25%;
+    margin-bottom: 15%;
+    border-radius:2px;
+    border:none;
+    background-color:#333333;
+    font-weight:400;
+    color:white;
+}
+
+button.Add-to-Cart:hover{
+    background-color:#f5d4dd;
+    color:#d54e73;
+}
+
+.etude-pink{
+    color:#e15477;
+}
+
+#cart:hover,#magnifier:hover{
+    transform:scale(1.035);
+}
+
+small{
+    color:#979797;
+}
+
+small.strike{
+    text-decoration: line-through;
+}
+
+span.checked{
+    color:#ffb400;
+}
+
+.hot-deals-item-1-information,.hot-deals-item-2-information,.hot-deals-item-3-information,.hot-deals-item-4-information,.whats-new-item-1-information,.whats-new-item-2-information,.whats-new-item-3-information,.whats-new-item-4-information,.bestsellers-item-1-information,.bestsellers-item-2-information,.bestsellers-item-3-information,.bestsellers-item-4-information{
+    padding: 2px 8px;
+}
+
+span.new-color{
+    position: relative;
+    top:90%;
+    left:20px;
+}
+
+.Whats-New{
+    width:100vw;
+    height:220vh;
+    padding: 20px 25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.whats-new-items{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.fixed-image{
+    margin-right:35px;
+    width:40vw;
+    height:170vh;
+    background-image: url("./Whats_new/fixing_tint_rose_lilac_thum_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+
+.other-items{
+    width:50vw;
+    height:180vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.row-1,.row-2{
+    height:60%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.row-1{
+    position:relative;
+}
+
+.whats-new-item-1,.whats-new-item-2,.whats-new-item-3,.whats-new-item-4{
+    width:45%;
+    height:80vh;
+    border-radius: 2px;
+    background-color: rgba(245, 245, 245, 0.646);
+    backdrop-filter:blur(30px);
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.whats-new-item-1-information,.bestsellers-item-1-information,.bestsellers-item-3-information,.bestsellers-item-4-information,.hot-deals-item-1-information{
+    position:relative;
+    bottom:10px;
+}
+
+.Bestsellers{
+    width:100vw;
+    height:130vh;
+    padding: 20px 25px;
+    background: rgb(251,244,244);
+    background: linear-gradient(90deg, rgba(251,244,244,1) 20%, rgba(250,243,243,1) 40%, rgba(249,237,237,1) 60%, rgba(248,233,233,1) 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
